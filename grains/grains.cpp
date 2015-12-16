@@ -13,18 +13,18 @@
 
 
 using namespace std;
-vector<long long> sq;
+vector<long long> board;
 
 void squar(int n) {
-  sq.push_back(1);
+  board.push_back(1);
   int i = 0;
   
   while (i < 64) {
-    long long result = sq[i] * 2;
-    sq.push_back(result);
+    long long result = board[i] * 2;
+    board.push_back(result);
     ++i;
   }
-  cout << "There are " << sq[n-1] << " grains at square " << n << "\n";
+  cout << "There are " << board[n-1] << " grains at square " << n << "\n";
 }
 
 void total() {
