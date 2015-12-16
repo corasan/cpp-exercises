@@ -15,6 +15,7 @@
 using namespace std;
 vector<long long> board;
 
+// Calculates the amount of grains on each square of the board
 void squar(int n) {
   board.push_back(1);
   int i = 0;
@@ -27,6 +28,7 @@ void squar(int n) {
   cout << "There are " << board[n-1] << " grains at square " << n << "\n";
 }
 
+// Show total of grains on the board
 void total() {
   cout << "Total grains: " << pow(2, 64) << "\n";
 }
